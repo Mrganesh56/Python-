@@ -1,0 +1,216 @@
+|------------------------------About the Python------------------------------|
+
+
+--Python is a general purpose, high level interpreted language with easy syntax and dynamic semantics 
+--Created by Guido Van Rossum in 1989
+
+Why python is popular ?
+-easy
+-free or open source
+-application
+-library and support 
+
+features of python
+-open source
+-easy
+-portable
+-simplicity
+-hug libraries
+-interpreted
+-object oriented
+-portability
+-embeddable & extensible 
+
+python is a very interactive language
+
+we can run python code on
+1. vsCode 
+2. Idle(use to run python code) of python to run code 
+   IDLE is a simple tool that comes with Python for writing and running Python programs.
+
+
+----Eg In Vs code 
+
+print("Hello world!")
+a=6
+b=8
+c=a+b
+print("addition of 2 numbers:",c) 
+
+----Eg in Idle 
+1.
+7+8
+15
+
+2.
+if 0<15:    # :(colan is use to indicate the start of block 
+    print("0 is less then 15")
+
+    
+0 is less then 15
+
+
+
+
+Types of mode of Using IDLE to run python
+1.interactive mode (use for small codes and on idle screen only)
+2.Scripting mode (use for code for greater than 5 to 6 lines and it is open through    idle using new file) 
+
+-------
+python indentation
+
+Most of the programming languages like c, c++, and java use braces {} to define a block of code, Python however, uses indentation.
+
+A code block (body of a  function ,loop, etc.) starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block  . 
+
+-------
+
+Comment (#)
+
+# is use to commant line of code in python
+python does not support multiple line commant
+
+-------
+
+Python identifiers
+
+an identifiers is a name given to entities like class, functions and variable. 
+helps to differentiate one entity to another entity
+
+Rules for identifiers
+1. it starts with lowercase
+2. It cannot start with number or special character except underscore(_)
+3. do not use keywords as identifiers
+
+--------
+
+Python Keywords
+
+keywords are the reserved word in python 
+
+there are 33 keywords in python
+
+------
+
+How to find the type of variable 
+
+a=10
+print(type(a))
+output = <class 'int'>
+
+a='ganesh'
+print(type(a))
+output = c=<class 'str'>
+
+c=True
+print(type(c))
+output = <class 'bool'>
+
+------
+
+Data types 
+
+int 
+string
+float
+char 
+bool 
+
+
+-------
+
+Operators in python
+
+1.Arithmatic Operator(+,*,-,/)
+*
+a=2
+b=1
+print(a+b)
+print('gan'+'esh')
+print(a-b)
+print(a*b)
+print(a/b) #floor divison
+*
+
+2. Assignment operator 
+
+
+3. comparison operator (return true or false) 
+	it always checks the value stored in the variable 
+	<,>,!=,==
+
+4. Logical operator
+
+	and, or, not 
+
+5. Bitwise operator (It is use to shift the bit )
+ 
+	|(or) , &(and) , ^(xor) , >>(right shift) , <<(left shift)
+
+  eg: 
+	e=2  #0010
+	d=6  #0110
+	print(e ^ d) #output = 4
+	print(e & d) #output = 2 
+	print(e | d) #output = 6
+	print(d>>e) #output =1  d ko right shift kiya hai 2 se 
+	print (d<<e) #output =24  d ko left shift kiya hai 2 se 
+
+
+6. Identity operator 
+	is , is not
+eg:
+    	x= 10 
+	print( x is 5)   # flase
+	print( x is 10)  #true
+
+	y=10 
+	print( y is not 5)  #true
+	print( y is not 10) #flase
+
+
+7. Membership operator 
+	in, not in 
+eg:
+	name ="Ganesh"
+	print( 'a' in name) #output True 
+	print( 'g' in name) #output False
+	print( 'e' not in name) #output False 
+	print( 'g' not in name) # output True 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
