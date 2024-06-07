@@ -133,7 +133,7 @@ print(a/b) #floor divison
 *
 
 2. Assignment operator 
-
+	=,+=,-=,*=,/=,%=,//=
 
 3. comparison operator (return true or false) 
 	it always checks the value stored in the variable 
@@ -157,7 +157,7 @@ print(a/b) #floor divison
 	print (d<<e) #output =24  d ko left shift kiya hai 2 se 
 
 
-6. Identity operator 
+6. Identity operator (it check the memory location of varible)
 	is , is not
 eg:
     	x= 10 
@@ -179,38 +179,446 @@ eg:
 	print( 'g' not in name) # output True 
 
 
+---------------------------------------
+
+
+
+Control Flow 
+
+for varibles in sequence
+1. If else , nested if  
+ 	a=18
+	if a>18:
+    	print("u can vote")
+	elif a==18:
+    	print("u are 18 u can vote vote")
+	else:
+    	print("u can not vote")
+
+
+-------------------------------------------
+
+
+Loops 
+!. For loop
+
+
+*******start(default 0) , end( have to specify) , increment (default 1)
+
+1.
+	for i in range(10):   # start defult 0 hoga or apne ko end number dena hoga 
+	   print(i)   # output 9 tak hi aayega last number nahi aayega kyuki last number exclusive hai 
+output :
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+2.    for i in range(10,20):  # number start from 10 to print till 19 
+          print("number is i:",i)
+
+
+output: 
+number is i: 10
+number is i: 11
+number is i: 12
+number is i: 13
+number is i: 14
+number is i: 15
+number is i: 16
+number is i: 17
+number is i: 18
+number is i: 19
+
+
+3. for i in range(0,10,2): # 2 is used for iteration 
+    print(i)
+
+output=
+0
+2
+4
+6
+8
 
 
 
 
+4. for i in range(10,0,-1):  # -1 is used for decrement, increment is default but for decrement u have to specify
+    print(i) 
+
+output:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+#for string in sequence
+
+5.  
+name="ganesh"
+for i in name:
+    print(i)
+
+output :
+g
+a
+n
+e
+s
+h
+
+6. 
+name="ganesh"
+for i in range(len(name)-1,-1,-1):  # len ka use karke pahle length lega name ka or vo starting point hoga , end vala -1 for reverse or                           					middle vala -1 is for kyunki last number excluded hota hai na isiliye if 0 last hoga to 0 chod 						dega or hame 0 tak jana hai to last -1 hoga
+    print(name[i])
+
+output:
+
+h
+s
+e
+n
+a
+g
 
 
 
+7. 
+#print number till 30 which is divible by 3 
+
+
+for i in range(3,31,3):
+    print(i)
+
+output:
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+
+
+8. 
+for i in range(1,11,1):
+    print("3","*",i,"=",i*3)
+
+output:
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+3 * 10 = 30
 
 
 
+!.While loop 
+
+
+While loop auto increment nahi hota hai isme specify karna hoga varna infinite loop me jayega
+
+1.
+i=0
+while i<=10:
+    print(i)
+    i=i+1 #i+=1
+
+output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+2.
+i=0
+while i<=10:
+    i+=1
+    print(i)    
+
+output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+
+3.
+#take start and end from the user and then print that using type casting
+
+start=int(input("Enter the start"))
+end=int(input("Enter the end"))
+
+while start<=end:
+    print(start)
+    start+=1
+
+output:
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+
+For loop with else (for loop ke sath else use kar skte hai)
+
+eg:
+for i in range(10):
+    print(i)
+else:
+    print("Loop ends")   # for jab terminate hoga tab else print hoga
+for i in range(10,21):
+    print(i)
+
+else:
+    print('SEcond for ends')
+
+output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Loop ends
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+SEcond for ends
+
+
+!. JUMP STATEMENT
+
+1.break  (To come out of the loop)
+2.continue  (To skip the current iteration )
+3.pass ( Kam abhi nahi hoga bad me hoga 
+4.return
+
+
+!. Excape Sequence 
+'/n'
+'/p'
+'/t'
+
+eg:
+print('ganesh')
+print('mishra')
+print('ganesh',end="  ")
+print('mishra')
+print('ganesh',end="jdfhjdfk")
+print('mishra')
+print('ganesh',end="    ")
+print('mishra')
+
+output:
+ganesh
+mishra
+ganesh  mishra
+ganeshjdfhjdfkmishra
+ganesh    mishra
+
+----------------------------------------
+
+
+STRING
+String order is always same it will not change 
 
 
 
+Eg:
+*****Indexing***** ( It only gives the character which is on that index
+
+name='ganeshMishra'
+name[1] # indeces
+output: 
+'a'
+
+***Slicing**** ( Use to get more than 1 character from the string)
+
+[Start , end , step]
+1. 
+name='ganeshMishra'
+name[2:8] 
+
+Output:
+'neshMi'
+
+2.
+name='ganeshMishra'
+name[2:8:2] 
+
+output:
+'nsM'
+
+-------------------------------------
+
+Reverse the String
+
+1.
+name="ganeshmishra"
+for i in range(11,-1,-1):
+    print(name[i],end=" ")
+    
+output:-
+a r h s i m h s e n a g 
+
+2. 
+name="ganeshmishra"
+print(name[::-1])   # it is simple method to reverse the string
+
+output:
+arhsimhsenag
+
+
+------------------------------------
+STRING OPERAND
+
+# string operands 
 
 
 
+name = 'ganesh'
+name.upper() #convert upper case
+name.lower() #convert loewr  case 
+name.strip() # use to trim the blank spaces form the start and end in the string 
+name.replace('h','j') # use to replace the character of the string 
+name.split() #split is use to seprate all the string given
+
+Example:
+name='    ganesh   '
+print(name.upper())
+print(name.lower())
+print(name.strip())
+print(name.replace('g','p'))
+
+output:
+    GANESH   
+    ganesh   
+ganesh
+    panesh   
+
+Example of split:
+name='ganesh mishra bhogendra'
+print(name.split())
+print(type(name.split()))
+
+output:
+['ganesh', 'mishra', 'bhogendra']
+<class 'list'>
 
 
+--------------------------------------------
+
+#code for seprate the full string in 2 parts 
+
+name='ganesh mishra , computer, engineer'
+t1=name[0:14]
+t2=name[15:35]
+print(t1)
+print(t2)
+print(name[::-1])   # it will reverse the string 
 
 
+output:
+ganesh mishra 
+ computer, engineer
+reenigne ,retupmoc , arhsim hsenag
 
 
+----------------------------------------------
+
+****************Lists*******************
+
+Similar to array but it can hold different values of different data types, different for vector also because vector have sequential memory location but list does not have that 
+so it is different from array and vector both 
+
+there are two types to create list
+1.
+lst=[1,2,3,4,'gaensh']
+2.
+lst=list('fakd',5,6,True)   # In this type it only contains one string 
+
+Eg:
+1.
+txt=[1,2,3,'Gaensh','Boy',True]
+
+print(txt[4])   #output=Boy
+print(txt[2])	#Output=3
+print(txt[3])	#output=Ganesh
 
 
+***********Using Negative indexing*********
 
+print(txt[-1])  #negative indexing ka use karte sidhe index se ulta ho jata hai 
+print(txt[-2])
+print(txt[-3])
 
+Output:
+Boy
+Gaensh
+3
 
+ 2. 
+llst1=list('mishra')
+lst1
 
-
-
-
-
-
+output :
+['m', 'i', 's', 'h', 'r', 'a'] 
 
 
